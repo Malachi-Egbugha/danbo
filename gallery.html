@@ -2,17 +2,24 @@
 <html lang="en">
 
   <head>
-    <title>DANBO ADMISSION PAGE</title>
+    <title>DANBO INTERNATIONAL SCHOOLS GALLERY</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700|Indie+Flower" rel="stylesheet">
     
 
-   <script src="https://kit.fontawesome.com/c2e5dea6cc.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c2e5dea6cc.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+ 
+   
+   
+
+    <!-- MAIN CSS -->
+   
     <style type="text/css">
       /* Base */
 .text-cursive {
@@ -36,6 +43,24 @@ body {
   color: #fff; }
 
 
+.site-footer {
+  padding: 4em 0;
+  background: #343a40; }
+  .site-footer .border-top {
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important; }
+  .site-footer p {
+    color: #fff; }
+  .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5 {
+    color: #fff; }
+  .site-footer a {
+    color: rgba(255, 255, 255, 0.8); }
+    .site-footer a:hover {
+      color: white; }
+  .site-footer ul li {
+    margin-bottom: 10px; }
+  .site-footer .footer-heading {
+    font-size: 18px;
+    color: #fd4d40; }
 
 /* Navbar */
 .site-navbar {
@@ -59,8 +84,7 @@ body {
 .text-teal {
   color: #16c3b0; }
 
-   /*--------------------------------------------------------------
-# Footer
+  # Footer
 --------------------------------------------------------------*/
 
 
@@ -201,19 +225,19 @@ body {
 
 
 
-#footer .team {
+.team {
   text-align: center;
   font-size: 13px;
-  color: #ddd;
+  color: #fff;
 }
+
 
     </style>
 
   </head>
 
-  <body data-spy="scroll"  data-offset="300">
-
-<!-- NAV BAR-->
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <!-- NAV BAR-->
 
 
       <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #303f9f">
@@ -233,14 +257,20 @@ body {
       <li class="nav-item">
         <a class="nav-link" href="#">OUR SCHOOL</a>
       </li>
-       <li class="nav-item dropdown active">
+       <li class="nav-item">
+        <a class="nav-link" href="#">ACADEMICS</a>
+      </li>
+       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           ADMISSIONS
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #303f9f">
-          <a class="dropdown-item" href="#admissionrequirement" style="color: #ffffff">ADMISSION PROCEDURE AND REQUIREMENT</a>
-           <a class="dropdown-item" href="#admissionform" style="color: #ffffff">APPLY FOR ADMISSION</a>
+          <a class="dropdown-item" href="index.html#admissionrequirement" style="color: #ffffff">ADMISSION PROCEDURE AND REQUIREMENT</a>
+           <a class="dropdown-item" href="index.html#admissionform" style="color: #ffffff">APPLY FOR ADMISSION</a>
            <a class="dropdown-item" href="#" style="color: #ffffff">TAKE ENTRANCE EXAM</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="#">FACILITIES</a>
       </li>
 
       <li class="nav-item dropdown">
@@ -252,24 +282,17 @@ body {
            <a class="dropdown-item" href="#" style="color: #ffffff">STAFF MAIL</a>
            <a class="dropdown-item" href="#" style="color: #ffffff">PROCEED TO ONLINE CLASSES</a>
       </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#">ACADEMICS</a>
+       <li class="nav-item  active">
+        <a class="nav-link" href="#">GALLERY</a>
       </li>
-      
       <li class="nav-item">
         <a class="nav-link" href="#">CONTACT</a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="#">NEWS</a>
+        <a class="nav-link" href="#">NEWS AND EVENTS</a>
       </li>
-       <li class="nav-item">
-        <a class="nav-link" href="gallery.html">GALLERY</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#">FACILITIES</a>
-      </li>
+    
     </ul>
-
    <ul class="navbar-nav ml-auto nav-flex-icons">
           <li class="nav-item">
             <a class="nav-link waves-effect waves-light">
@@ -294,8 +317,12 @@ body {
   </div>
 </nav>
 
+    
 
+    
+     
 
+       
 
 <!--ADDRESS BAR--------->
   
@@ -322,267 +349,149 @@ body {
         </div>
       </header>
 
-<!--ADMISSION REQUIREMENT-------->
-      <div class="site-section-cover overlay bg-light" id="admissionrequirement">
-        <div class="container">
-          <div class="row ">
-            <div class="col-md-4">
-              <img src="images/admission.jpeg" class="img-thumbnail" alt="Cinque Terre">
-            </div>
 
 
-             <div class="col-md-8">
-              <div class="card">
-                <button class="btn text-white" type="button" data-toggle="collapse" data-target="#nursery" aria-expanded="false" aria-controls="collapseExample" style="background-color: #303f9f">
-  <div class="card-header text-left"> 
-    NURSERY/PRIMARY (Requirements & Procedure)
 
 
-  </div>
-  </button>
-<div class="collapse" id="nursery">
-  <div class="card-body">
-    ENTER YOUR ADMIN PROCEDURE HERE Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  </div>
-</div>
- 
-</div>
 
+
+
+
+<div class="container">
+    <div id="accordion">
 
  <div class="card">
-                <button style="background-color: #303f9f" class="btn text-white" type="button" data-toggle="collapse" data-target="#college" aria-expanded="false" aria-controls="collapseExample">
-  <div class="card-header text-left "> 
-    COLLEGE (Requirements & Procedure)
+    <div class="card-header">
+        <button class="btn btn-primary" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <h5 class="mb-0">
+       
+          KADUNA SCHOOLS
+        
+      </h5>
+      </button>
+      
+       <button class="btn btn-primary collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+           <h5 class="mb-0">
+          ABUJA SCHOOLS
+        </h5>
+        </button>
+      
+    </div>
+   
+      <div class="card-body">
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      
+       <!--gallery section------->
 
- 
-  </div>
-  </button>
-<div class="collapse" id="college">
-  <div class="card-body">
-    ENTER YOUR ADMIN PROCEDURE HERE Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  </div>
-</div>
-  
-</div>
-
-
-
-<div class="card">
-                <button  style="background-color: #303f9f" class="btn text-white" type="button" data-toggle="collapse" data-target="#dsens" aria-expanded="false" aria-controls="collapseExample">
-  <div class="card-header text-left"> 
-    DANBO SPECIAL EDUCATION NEEDS SCHOOL (Requirements & Procedure)
-
-
-  </div>
-  </button>
-<div class="collapse" id="dsens">
-  <div class="card-body">
-    ENTER YOUR ADMIN PROCEDURE HERE Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  </div>
-</div>
- 
-</div>
-
-
-
-
-<div class="card">
-                <button style="background-color: #303f9f" class="btn text-white" type="button" data-toggle="collapse" data-target="#sixthform" aria-expanded="false" aria-controls="collapseExample">
-  <div class="card-header text-left"> 
-    SIXTH FORM (Requirements & Procedure)
-
-
-  </div>
-  </button>
-<div class="collapse" id="sixthform">
-  <div class="card-body">
-   ENTER YOUR ADMIN PROCEDURE HERE  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  </div>
-</div>
- 
-</div>
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <span class="text-cursive h5 text-red d-block">Our Gallery</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/nursery_1.jpeg" data-fancybox="group" data-caption="Caption #1"><img src="images/gallery/nursery_1.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/nursery_2.jpeg" data-fancybox="group"><img src="images/gallery/nursery_2.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/nursery_3.jpeg" data-fancybox="group"><img src="images/gallery/nursery_3.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/nursery_4.jpeg" data-fancybox="group"><img src="images/gallery/nursery_4.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
 
 
 
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/nursery_5.jpeg" data-fancybox="group" data-caption="Caption #1"><img src="images/gallery/nursery_5.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/nursery_6.jpeg" data-fancybox="group"><img src="images/gallery/nursery_6.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/nursery_7.jpeg" data-fancybox="group"><img src="images/gallery/nursery_7.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/nursery_8.jpeg" data-fancybox="group"><img src="images/gallery/nursery_8.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
 
 
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/sixthform_1.jpeg" data-fancybox="group" data-caption="Caption #1"><img src="images/gallery/sixthform_1.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/sixthform_2.jpeg" data-fancybox="group"><img src="images/gallery/sixthform_2.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/sixthform_3.jpeg" data-fancybox="group"><img src="images/gallery/sixthform_3.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/sixthform_4.jpeg" data-fancybox="group"><img src="images/gallery/sixthform_4.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
 
+
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/college_1.jpeg" data-fancybox="group" data-caption="Caption #1"><img src="images/gallery/college_1.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/college_2.jpeg" data-fancybox="group"><img src="images/gallery/college_2.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/college_3.jpeg" data-fancybox="group"><img src="images/gallery/college_3.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/college_4.jpeg" data-fancybox="group"><img src="images/gallery/college_4.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
+
+
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/dsens_1.jpeg" data-fancybox="group" data-caption="Caption #1"><img src="images/gallery/dsens_1.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/dsens_2.jpeg" data-fancybox="group"><img src="images/gallery/dsens_2.jpeg" alt="Image" class="img-fluid"><img src="images/gallery/dsens_4.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/dsens_3.jpeg" data-fancybox="group"><img src="images/gallery/dsens_3.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
+          <div class="col-md-3 mb-4">
+            <a href="images/gallery/dsens_4.jpeg" data-fancybox="group"><img src="images/gallery/dsens_5.jpeg" alt="Image" class="img-fluid"></a>
+          </div>
+
+          
+          <div class="col-md-3 mb-4">
+            <img src="images/gallery/nursery_1.jpeg" alt="Image" class="img-fluid">
           </div>
         </div>
       </div>
-   
+    </div>
 
-    <!--enrollment form-->
-    <div class="container" style="margin-top:40px" id="admissionform">
-      <div class="card">
-                        <div class="card-header" style="background-color: #303f9f; color: #ffffff; text-align: center">
-                            <h4 class="mb-0">ONLINE APPLICATION FORM</h4>
-                        </div>
-                        <div class="card-body">
-    <form class="form">
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="firstname">FIRSTNAME</label>
-      <input type="text" class="form-control" id="firstname" placeholder="ENTER FIRSTNAME" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="lastname">LASTNAME</label>
-      <input type="text" class="form-control" id="lastname" placeholder="ENTER LASTNAME" required>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="othername">OTHERNAMES</label>
-      <input type="text" class="form-control" id="othername" placeholder="ENTER OTHERNAMES" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="email">PARENT EMAIL</label>
-      <input type="email" class="form-control" id="email" placeholder="ENTER EMAIL" required>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="pfirstname">PARENT FIRSTNAME</label>
-      <input type="text" class="form-control" id="pfirstname" placeholder="ENTER PARENT FIRSTNAME" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="plastname">PARENT LASTNAME</label>
-      <input type="text" class="form-control" id="plastname" placeholder="ENTER PARENT LASTNAME" required>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="othername">PARENT PHONE NUMBER</label>
-      <input type="tel" class="form-control" id="othername" placeholder="ENTER OTHERNAMES" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
-       required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="sex">SEX</label>
-      <select class="form-control" id="sex" required>
-        <option>MALE</option>
-        <option>FEMALE</option>
-      </select>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="date">DATE OF BIRTH</label>
-      <input type="date" class="form-control" id="date" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="state">STATE OF ORIGIN</label>
-      <select class="form-control" id="state" required>
-          <option>Abia</option>
-          <option>Adamawa</option>
-          <option>Akwa Ibom</option>
-          <option>Anambra</option>
-          <option>Bauchi</option>
-          <option>Bayelsa</option>
-          <option>Benue</option>
-          <option>Borno</option>
-          <option>Cross River</option>
-          <option>Delta</option>
-          <option>Ebonyi</option>
-          <option>Enugu</option>
-          <option>Edo</option>
-          <option>Ekiti</option>
-          <option>Gombe</option>
-          <option>Imo</option>
-          <option>Jigawa</option>
-          <option>Kaduna</option>
-          <option>Kano</option>
-          <option>Katsina</option>
-          <option>Kebbi</option>
-          <option>Kogi</option>
-          <option>Kwara</option>
-          <option>Lagos</option>
-          <option>Nasarawa</option>
-          <option>Niger</option>
-          <option>Ogun</option>
-          <option>Ondo</option>
-          <option>Osun</option>
-          <option>Oyo</option>
-          <option>Plateau</option>
-          <option>Rivers</option>
-          <option>Sokoto</option>
-          <option>Taraba</option>
-          <option>Yobe</option>
-          <option>Zamfara</option>
-      </select>
-    </div>
-  </div>
-   <div class="form-row">
-    <div class="form-group col-md-6">
-       <label for="branch">DESIRED BRANCH</label>
-      <select class="form-control" id="branch" required>
-        <option>ABUJA</option>
-        <option>KADUNA</option>
-      </select>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="schoollevel">SCHOOL LEVEL</label>
-      <select class="form-control" id="schoollevel" required>
-        <option>NURSERY</option>
-        <option>PRIMARY</option>
-        <option>COLLEGE</option>
-        <option>SPECIAL EDUCATION NEEDS SCHOOL</option>
-        <option>SIXTHFORM</option>
-      </select>
-    </div>
-  </div>
-   <div class="form-row">
-    <div class="form-group col-md-6">
-       <label for="bloodgroup">BLOOD GROUP</label>
-      <select class="form-control" id="bloodgroup" required>
-        <option>A</option>
-        <option>B</option>
-        <option>O</option>
-        <option>AB</option>
-      </select>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="genotype">GENOTYPE</label>
-      <select class="form-control" id="genotype" required>
-        <option>AA </option>
-        <option>AS </option>
-        <option>AC</option>
-        <option>SS</option>
-        <option>SC</option>
-        <option>CC </option>
-      </select>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="currentschool">CURRENT SCHOOL</label>
-      <input type="text" class="form-control" id="currentschool" placeholder="ENTER CURRENT SCHOOL" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="currentclass">CURRENT CLASS</label>
-      <input type="text" class="form-control" id="currentclass" placeholder="ENTER CURRENT CLASS" required>
-    </div>
-  </div>
-   <div class="form-row">
-  <div class="form-group col-md-12">
-    <label for="address">ADDRESS:</label>
-    <textarea id="address" name="address" class="form-control" rows="4" required>
       
-    </textarea>
-    
-  </div>
-</div>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      
+        abuja pictures comes here. Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      
+    </div>
+        
+    </div>
  
-  <button type="submit" class="btn btn-primary">SUBMIT</button>
-</form>
-</div>
-</div>
 </div>
 
-   
+
+</div>
+</div>
 
 
 
-   <!--==========================
+
+
+
+
+ <!--==========================
     Footer
   ============================-->
   <footer id="footer">
@@ -591,7 +500,7 @@ body {
         <div class="row">
 
           <div class="col-lg-4 col-md-6 footer-info">
-            <h3>OUR SCHOOLS</h3>
+            <h3 style="color: #fff;">OUR SCHOOLS</h3>
             <p>
               <ul>
                 <li><i class="ion-ios-arrow-right"></i> <a href="#">Danbo International Schools, Kaduna</a></li>
@@ -615,7 +524,7 @@ body {
             </ul>
           </div>
 
-          <div class="col-lg-4 col-md-6 footer-contact">
+          <div class="col-lg-4 col-md-6 footer-contact" style="color: #fff;">
             <h4>Contact Us</h4>
             <p>
               <span style="font-weight: bold;">KADUNA:</span> 28 Kubani Crescent, Barnawa,Kaduna.<br>
@@ -644,26 +553,34 @@ body {
       </div>
     </div>
 
-    <div class="container-fluid ">
+  </footer><!-- #footer -->
+   <div class="container-fluid " style="background-color:#303f9f;padding-bottom: 30px; ">
       
       <div class="team">
         
          Danbo International schools | I.C.T. &copy;<script>document.write(new Date().getFullYear());</script>
       </div>
     </div>
-  </footer><!-- #footer -->
+
+    
 
 
-    </div>
-
-   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    
+   
+
+
+
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+  
+  
+   
+
 
   </body>
 
 </html>
-
 
