@@ -1,20 +1,38 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 
-  <head>
-    <title>DANBO ADMISSION PAGE</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
 
-    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700|Indie+Flower" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>DANBO INTERNATIONAL SCHOOLS ACADEMIC</title>
+
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+   <meta name="keywords" content="" />
+  <meta name="description" content="" />
+ <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700|Indie+Flower" rel="stylesheet">
     
 
    <script src="https://kit.fontawesome.com/c2e5dea6cc.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
-    <style type="text/css">
-      /* Base */
+    
+
+  <!-- css -->
+
+
+ 
+ 
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+ <style type="text/css">
+   /* Base */
 .text-cursive {
   font-family: "Indie Flower", cursive !important; }
 
@@ -58,6 +76,7 @@ body {
 
 .text-teal {
   color: #16c3b0; }
+
 
    /*--------------------------------------------------------------
 # Footer
@@ -207,16 +226,84 @@ body {
   color: #ddd;
 }
 
-    </style>
-
-  </head>
-
-  <body data-spy="scroll"  data-offset="300">
-
-<!-- NAV BAR-->
 
 
-      <nav class="navbar navbar-expand-xl navbar-dark" style="background-color: #303f9f">
+
+.parallax {
+  /* The image used */
+  background-image: url("images/bg/drone.jpeg");
+
+  /* Set a specific height */
+  height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*============== 3. General ===================*/
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+}
+
+
+
+
+
+/*============== 5. Intro section ===================*/
+
+/* parallax */
+
+section#intro {
+  background: #000 url(images/bg/bg1.jpeg) no-repeat;
+  background-size: cover;
+  color: #fff;
+  max-height: 650px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/*============== 9. Custom queries ===================*/
+
+@media(min-width: 768px) and (max-width: 979px) {
+  .wrapper {
+    width: 735px;
+    margin: 0 auto;
+  }
+ 
+}	
+
+@media(min-width: 480px) and (max-width: 767px) {
+  .wrapper {
+    width: 480px;
+    margin: 0 auto;
+  }
+ 
+}
+
+
+ </style>
+</head>
+
+<body>
+
+  <!-- main wrap -->
+
+
+    <nav class="navbar navbar-expand-xl navbar-dark" style="background-color: #303f9f; margin-bottom: 0px">
   <a class="navbar-brand" href="#"><img src="images/logo.png" width="225px" height="59px"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -238,13 +325,13 @@ body {
            <a class="dropdown-item" href="#" style="color: #ffffff">DANBO SCHOOL ABUJA</a>
        
       </li>
-       <li class="nav-item dropdown active">
+       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           ADMISSIONS
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #303f9f">
-          <a class="dropdown-item" href="#admissionrequirement" style="color: #ffffff">ADMISSION PROCEDURE AND REQUIREMENT</a>
-           <a class="dropdown-item" href="#admissionform" style="color: #ffffff">APPLY FOR ADMISSION</a>
+          <a class="dropdown-item" href="index.html#admissionrequirement" style="color: #ffffff">ADMISSION PROCEDURE AND REQUIREMENT</a>
+           <a class="dropdown-item" href="index.html#admissionform" style="color: #ffffff">APPLY FOR ADMISSION</a>
            <a class="dropdown-item" href="#" style="color: #ffffff">TAKE ENTRANCE EXAM</a>
       </li>
 
@@ -257,13 +344,13 @@ body {
            <a class="dropdown-item" href="#" style="color: #ffffff">STAFF MAIL</a>
            <a class="dropdown-item" href="#" style="color: #ffffff">PROCEED TO ONLINE CLASSES</a>
       </li>
-       <li class="nav-item dropdown">
+      <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           ACADEMICS
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #303f9f">
-          <a class="dropdown-item" href="academics.html#curriculum" style="color: #ffffff">CURRICULUM</a>
-           <a class="dropdown-item" href="academics.html#programmes" style="color: #ffffff">PROGRAMMES</a>
+          <a class="dropdown-item" href="#curriculum" style="color: #ffffff">CURRICULUM</a>
+           <a class="dropdown-item" href="#programmes" style="color: #ffffff">PROGRAMMES</a>
            
       </li>
       
@@ -308,18 +395,83 @@ body {
 
 
 
-<!--ADDRESS BAR--------->
-  
 
-      <header class="site-navbar" role="banner">
+
+ 
+		
+		
+		
+
+
+  <div class="main-wrap" >
+    <!-- section intro -->
+    <section id="intro">
+      <div class="featured" style="margin-top: 0px">
+        <div class="wrapper">
+
+          <div class="row-fluid">
+            <!-- slider -->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+			<div class="carousel-item active text-center" style="margin-top:10px; margin-bottom:10px;">
+			<div class="row">
+			<div class="col-md-5">
+			<img class="model img-fluid" src="images/slides/img1.jpeg" alt=""/>
+			</div>
+			<div class="col-md-7">
+			<h1 style="font-size:2.5vw;">PROFESSIONAL TEACHERS</h1>
+			<h2 style="font-size:2vw;">Student Centered Learning</h2>
+			</div>
+			</div>
+			
+			
+			
+			</div>
+			<div class="carousel-item text-center" style="margin-top:10px; margin-bottom:10px;">
+			<div class="row">
+			<div class="col-md-5">
+			<img class="model" src="images/slides/img2.jpeg" alt=""/>
+			</div>
+			<div class="col-md-7">
+			<h1 style="font-size:2.5vw;">OVER FOUR DECADE EXPERIENCE</h1>
+			<h2 style="font-size:2vw;">A warm and safe environment</h2>
+			</div>
+			</div>
+			</div>
+			<div class="carousel-item text-center" style="margin-top:10px; margin-bottom:10px;">
+			<div class="row">
+			<div class="col-md-5">
+			<img class="model" src="images/slides/img3.jpeg" alt=""/>
+			</div>
+			<div class="col-md-7">
+			<h1 style="font-size:2.5vw;">STANDARD LABORATORIES</h1>
+			<h2 style="font-size:2vw;">Educational sustainability</h2>
+			</div>
+			</div>
+			</div>
+			</div>
+			</div>
+            <!-- end slider -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- end section intro -->
+  </div>
+  <!-- end main wrap -->
+  <!--ADDRESS BAR--------->
+   
+
+      <header class="site-navbar" role="banner" style="margin-top: 20px">
         <div class="container ">
           <div class="d-flex align-items-center">
             
             <div class="site-quick-contact d-none d-lg-flex ml-auto ">
               <div class="d-flex site-info align-items-center mr-5">
                 <span class="block-icon mr-3"><span class="fas fa-map-marker"></span></span>
-                <span class="text-dark"><span style="font-weight: bold;">KADUNA ADDRESS:</span>28 Kubani Crescent,Barnawa,Kaduna - Nigeria 
-                  <br><span style="font-weight: bold;">ABUJA ADDRESS:</span> Plot 306,Ebitu Ukiwe Street,Jabi, Abuja</span>
+                <span class="text-dark"><span style="font-weight: bold;">KADUNA ADDRESS:</span>28 Kubani Crescent, Barnawa, Kaduna
+                  <br><span style="font-weight: bold;">ABUJA ADDRESS:</span> Plot 306, Ebitu Ukiwe Street, Jabi, Abuja</span>
               </div>
               <div class="d-flex site-info align-items-center mr-5">
                 <span class="block-icon mr-3"><span class="fas fa-phone"></span></span>
@@ -333,9 +485,19 @@ body {
         </div>
       </header>
 
-<!--ADMISSION REQUIREMENT-------->
-      <div class="site-section-cover overlay bg-light" id="admissionrequirement">
-        <div class="container">
+
+
+ 
+
+      <!--CURRICULUM-->
+       <div id="accordion">
+      <div class="site-section-cover overlay bg-light" id="admissionrequirement" style="margin-top: 30px">
+        <div class="container" id="curriculum">
+           <div class="row mb-5">
+          <div class="col-12 text-center">
+            <span class="text-cursive h5 text-red d-block" style="font-size: 25px; font-weight: bold;">OUR CURRICULUM</span>
+          </div>
+        </div>
           <div class="row ">
             <div class="col-md-4">
               <img src="images/admission.jpeg" class="img-thumbnail" alt="Cinque Terre">
@@ -346,12 +508,12 @@ body {
               <div class="card">
                 <button class="btn text-white" type="button" data-toggle="collapse" data-target="#nursery" aria-expanded="false" aria-controls="collapseExample" style="background-color: #303f9f">
   <div class="card-header text-left"> 
-    NURSERY/PRIMARY (Requirements & Procedure)
+    NURSERY/PRIMARY (Curriculum)
 
 
   </div>
   </button>
-<div class="collapse" id="nursery">
+<div class="collapse show" id="nursery" data-parent="#accordion">
   <div class="card-body">
     ENTER YOUR ADMIN PROCEDURE HERE Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
   </div>
@@ -363,12 +525,12 @@ body {
  <div class="card">
                 <button style="background-color: #303f9f" class="btn text-white" type="button" data-toggle="collapse" data-target="#college" aria-expanded="false" aria-controls="collapseExample">
   <div class="card-header text-left "> 
-    COLLEGE (Requirements & Procedure)
+    COLLEGE (Curriculum)
 
  
   </div>
   </button>
-<div class="collapse" id="college">
+<div class="collapse" id="college" data-parent="#accordion">
   <div class="card-body">
     ENTER YOUR ADMIN PROCEDURE HERE Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
   </div>
@@ -381,12 +543,12 @@ body {
 <div class="card">
                 <button  style="background-color: #303f9f" class="btn text-white" type="button" data-toggle="collapse" data-target="#dsens" aria-expanded="false" aria-controls="collapseExample">
   <div class="card-header text-left"> 
-    DANBO SPECIAL EDUCATION NEEDS SCHOOL (Requirements & Procedure)
+    DANBO SPECIAL EDUCATION NEEDS SCHOOL (Curriculum)
 
 
   </div>
   </button>
-<div class="collapse" id="dsens">
+<div class="collapse" id="dsens" data-parent="#accordion">
   <div class="card-body">
     ENTER YOUR ADMIN PROCEDURE HERE Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
   </div>
@@ -400,12 +562,12 @@ body {
 <div class="card">
                 <button style="background-color: #303f9f" class="btn text-white" type="button" data-toggle="collapse" data-target="#sixthform" aria-expanded="false" aria-controls="collapseExample">
   <div class="card-header text-left"> 
-    SIXTH FORM (Requirements & Procedure)
+    SIXTH FORM (Curriculum)
 
 
   </div>
   </button>
-<div class="collapse" id="sixthform">
+<div class="collapse" id="sixthform" data-parent="#accordion">
   <div class="card-body">
    ENTER YOUR ADMIN PROCEDURE HERE  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
   </div>
@@ -422,178 +584,111 @@ body {
         </div>
       </div>
    
+</div>
 
-    <!--enrollment form-->
-    <div class="container" style="margin-top:40px" id="admissionform">
-      <div class="card">
-                        <div class="card-header" style="background-color: #303f9f; color: #ffffff; text-align: center">
-                            <h4 class="mb-0">ONLINE APPLICATION FORM</h4>
-                        </div>
-                        <div class="card-body">
-    <form class="form">
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="firstname">FIRSTNAME</label>
-      <input type="text" class="form-control" id="firstname" placeholder="ENTER FIRSTNAME" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="lastname">LASTNAME</label>
-      <input type="text" class="form-control" id="lastname" placeholder="ENTER LASTNAME" required>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="othername">OTHERNAMES</label>
-      <input type="text" class="form-control" id="othername" placeholder="ENTER OTHERNAMES" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="email">PARENT EMAIL</label>
-      <input type="email" class="form-control" id="email" placeholder="ENTER EMAIL" required>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="pfirstname">PARENT FIRSTNAME</label>
-      <input type="text" class="form-control" id="pfirstname" placeholder="ENTER PARENT FIRSTNAME" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="plastname">PARENT LASTNAME</label>
-      <input type="text" class="form-control" id="plastname" placeholder="ENTER PARENT LASTNAME" required>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="othername">PARENT PHONE NUMBER</label>
-      <input type="tel" class="form-control" id="othername" placeholder="ENTER OTHERNAMES" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
-       required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="sex">SEX</label>
-      <select class="form-control" id="sex" required>
-        <option>MALE</option>
-        <option>FEMALE</option>
-      </select>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="date">DATE OF BIRTH</label>
-      <input type="date" class="form-control" id="date" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="state">STATE OF ORIGIN</label>
-      <select class="form-control" id="state" required>
-          <option>Abia</option>
-          <option>Adamawa</option>
-          <option>Akwa Ibom</option>
-          <option>Anambra</option>
-          <option>Bauchi</option>
-          <option>Bayelsa</option>
-          <option>Benue</option>
-          <option>Borno</option>
-          <option>Cross River</option>
-          <option>Delta</option>
-          <option>Ebonyi</option>
-          <option>Enugu</option>
-          <option>Edo</option>
-          <option>Ekiti</option>
-          <option>Gombe</option>
-          <option>Imo</option>
-          <option>Jigawa</option>
-          <option>Kaduna</option>
-          <option>Kano</option>
-          <option>Katsina</option>
-          <option>Kebbi</option>
-          <option>Kogi</option>
-          <option>Kwara</option>
-          <option>Lagos</option>
-          <option>Nasarawa</option>
-          <option>Niger</option>
-          <option>Ogun</option>
-          <option>Ondo</option>
-          <option>Osun</option>
-          <option>Oyo</option>
-          <option>Plateau</option>
-          <option>Rivers</option>
-          <option>Sokoto</option>
-          <option>Taraba</option>
-          <option>Yobe</option>
-          <option>Zamfara</option>
-      </select>
-    </div>
-  </div>
-   <div class="form-row">
-    <div class="form-group col-md-6">
-       <label for="branch">DESIRED BRANCH</label>
-      <select class="form-control" id="branch" required>
-        <option>ABUJA</option>
-        <option>KADUNA</option>
-      </select>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="schoollevel">SCHOOL LEVEL</label>
-      <select class="form-control" id="schoollevel" required>
-        <option>NURSERY</option>
-        <option>PRIMARY</option>
-        <option>COLLEGE</option>
-        <option>SPECIAL EDUCATION NEEDS SCHOOL</option>
-        <option>SIXTHFORM</option>
-      </select>
-    </div>
-  </div>
-   <div class="form-row">
-    <div class="form-group col-md-6">
-       <label for="bloodgroup">BLOOD GROUP</label>
-      <select class="form-control" id="bloodgroup" required>
-        <option>A</option>
-        <option>B</option>
-        <option>O</option>
-        <option>AB</option>
-      </select>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="genotype">GENOTYPE</label>
-      <select class="form-control" id="genotype" required>
-        <option>AA </option>
-        <option>AS </option>
-        <option>AC</option>
-        <option>SS</option>
-        <option>SC</option>
-        <option>CC </option>
-      </select>
-    </div>
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="currentschool">CURRENT SCHOOL</label>
-      <input type="text" class="form-control" id="currentschool" placeholder="ENTER CURRENT SCHOOL" required>
-    </div>
-    <div class="form-group col-md-6">
-      <label for="currentclass">CURRENT CLASS</label>
-      <input type="text" class="form-control" id="currentclass" placeholder="ENTER CURRENT CLASS" required>
-    </div>
-  </div>
-   <div class="form-row">
-  <div class="form-group col-md-12">
-    <label for="address">ADDRESS:</label>
-    <textarea id="address" name="address" class="form-control" rows="4" required>
+
+<!-- Container element -->
+<div class="parallax text-center">
+  
+  
+  <div class="container" style="height: 100%">
+    <div class="row h-100" >
+      <div class="col-sm-12  my-auto ">
+         <button class="btn" style="background-color:#303f9f;color: #fff; font-weight: bold; ">WE ARE COMMITED TOWARDS ENSURING THAT STUDENTS LEARN, A CULTURE OF COLLABORATION AND A FOCUS ON RESULTS</button> 
+        
+      </div>
       
-    </textarea>
+    </div>
     
   </div>
+  
 </div>
+
+
+
+<div class="container">
+  
+</div>
+
+
+
+
+
+
+
+ <div id="accordion">
+
+
+
+
+<div class="container" style="margin-top: 20px">
  
-  <button type="submit" class="btn btn-primary">SUBMIT</button>
-</form>
-</div>
-</div>
-</div>
+      <div class="row">
+        <div class="col-md-4">
+          <button class="btn  text-align programmes" onclick="prog(event)" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"  style="border-radius: 30%;padding: 10px 100px; width: 100%;font-size: 13px; font-weight: bold; background-color:#303f9f;color: #fff ">LEARNING RESOURCE</button>
+          
+        </div>
+         <div class="col-md-4">
+          <button onclick="prog(event)" class="btn text-align programmes" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo" style="border-radius: 30%;padding: 10px 100px;width: 100%; background-color: #fd4d40;font-size: 13px; font-weight: bold; color: #fff">SCHOOL PROGRAMMES</button>
+          
+        </div>
+         <div class="col-md-4">
+          <button onclick="prog(event)" class="btn text-align programmes" data-toggle="collapse" data-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree"  style="border-radius: 30%;padding: 10px 100px;width: 100%; font-size: 13px; font-weight: bold;background-color: #303f9f; color: #fff">LIBRARY</button>
+          
+        </div>
+        
+      </div>
+      
+    </div>
 
-   
+    <div class="container" style="margin-top: 20px" id="programmes">
+      <div class="row" style="width: 100%">
+        <div class="collapse" data-parent="#accordion" id="collapseOne"  style="width: 100%">
+        <div class="card card-body">
+           <div class="row mb-5">
+          <div class="col-12 text-center">
+            <span class="text-cursive h5 text-red d-block" style="font-size: 25px; font-weight: bold;">OUR LEARNING RESOURCE</span>
+          </div>
+        </div>
+          
+          
+        </div> 
+      </div>
+      </div>
+       <div class="row">
+        <div class="collapse show" data-parent="#accordion" id="collapsetwo" style="width: 100%">
+         <div class="card card-body">
+           <div class="row mb-5">
+          <div class="col-12 text-center">
+            <span class="text-cursive h5 text-red d-block" style="font-size: 25px; font-weight: bold;">OUR PROGRAMMES</span>
+          </div>
+        </div>
+        </div>
+          
+        </div> 
+      </div>
+       <div class="row">
+        <div class="collapse" data-parent="#accordion" id="collapsethree" style="width: 100%">
+         <div class="card card-body">
+           <div class="row mb-5">
+          <div class="col-12 text-center">
+            <span class="text-cursive h5 text-red d-block" style="font-size: 25px; font-weight: bold;">OUR LIBRARY</span>
+          </div>
+        </div>
+        </div>
+          
+        </div>  
+        </div>          
+      </div>
+      
+    </div>
+  </div>
 
 
 
-   <!--==========================
+
+
+    <!--==========================
     Footer
   ============================-->
   <footer id="footer">
@@ -665,16 +760,34 @@ body {
   </footer><!-- #footer -->
 
 
-    </div>
+    
 
-   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    
 
-  </body>
+
+
+
+
+
+
+
+
+  <script type="text/javascript">
+   
+    function prog(e){
+    let program=document.querySelectorAll('.programmes');
+     program.forEach(key =>{
+      key.style.background='#303f9f';
+
+    });
+    e.target.style.background ='#fd4d40';
+  }
+    
+  </script>
+
+</body>
 
 </html>
-
-
