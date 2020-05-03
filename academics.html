@@ -30,6 +30,7 @@
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
 
  <style type="text/css">
    /* Base */
@@ -231,7 +232,21 @@ body {
 
 .parallax {
   /* The image used */
-  background-image: url("images/bg/drone.jpeg");
+  background-image: url("images/bg/drone.png");
+
+  /* Set a specific height */
+  height: 400px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bus
+{
+  /* The image used */
+  background-image: url("images/bus.jpg");
 
   /* Set a specific height */
   height: 400px;
@@ -491,7 +506,7 @@ section#intro {
       <!--CURRICULUM-->
        <div id="accordion">
       <div class="site-section-cover overlay bg-light" id="admissionrequirement" style="margin-top: 30px">
-        <div class="container" id="curriculum">
+        <div class="container animated rotateIn duration-3s" id="curriculum">
            <div class="row mb-5">
           <div class="col-12 text-center">
             <span class="text-cursive h5 text-red d-block" style="font-size: 25px; font-weight: bold;">OUR CURRICULUM</span>
@@ -514,12 +529,42 @@ section#intro {
   </button>
 <div class="collapse show" id="nursery" data-parent="#accordion">
   <div class="card-body">
-    ENTER CURRCULUM HERE Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  </div>
+  <p class="lead" style="text-align: justify; color: #000"> 
+    Our <span style="color: #303f9f; font-weight: bold">Nursery</span> school run a broad, balanced, engaging, fun filled and exciting curriculum relevant to the needs of young children. We use the <span style="color: #303f9f; font-weight: bold">International Preschool Curriculum</span> as a tool kit to learning alongside the Early Years Foundation Stage which encompasses seventeen unique learning goals and objectives to help drive the children development and learning.  We Follow the IPC themes to provide learning full of activities, and real-life experiences that motivate children and provide a solid base for their future learning and development in all the key learning areas.
+Soft skills such as communication, listening, empathy, self control, problem solving, cooperation, adaptability, resilience, critical thinking  and social skills is adopted into our character education programs to develop personal learning goals in the children preparing them as global citizens.
+
+</p>
+
+
+
+ 
+
+
+
+ </div>
 </div>
  
 </div>
 
+
+
+<div class="card">
+                <button  style="background-color: #303f9f" class="btn text-white" type="button" data-toggle="collapse" data-target="#dsens" aria-expanded="false" aria-controls="collapseExample">
+  <div class="card-header text-left"> 
+    PRIMARY (Curriculum)
+
+
+  </div>
+  </button>
+<div class="collapse" id="dsens" data-parent="#accordion">
+  <div class="card-body">
+   <p class="lead" style="text-align: justify; color: #000">
+  Our <span style="color: #303f9f; font-weight: bold">Primary</span> Curriculum practices and engagement opportunities are hinged on the Principles and Objectives of the <span style="color: #303f9f; font-weight: bold">Cambridge Primary Curriculum</span>, using the <span style="color: #303f9f; font-weight: bold">International Primary Curriculum</span> as our Learning Tool Kit. The British curriculum forms the bedrock of our learning framework with the IPC (International Primary Curriculum) serving as a learning toolkit to enhance the quality of teaching and learning in the school. We believe the children are a part of a global community of learners and have to develop basic knowledge in their home and host countries experiences. As such, salient aspects of our history and communal life as a people, is drafted from the Nigerian National Curriculum to achieve a balance in the philosophies of Nigerian education which is to foster better human relationship, effective citizenship and national consciousness. 
+</p>
+  </div>
+</div>
+ 
+</div>
 
  <div class="card">
                 <button style="background-color: #303f9f" class="btn text-white" type="button" data-toggle="collapse" data-target="#college" aria-expanded="false" aria-controls="collapseExample">
@@ -531,7 +576,11 @@ section#intro {
   </button>
 <div class="collapse" id="college" data-parent="#accordion">
   <div class="card-body">
-    ENTER CURRICULUM HERE Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+<p class="lead" style="text-align: justify; color: #000"> Our academic curriculum is a unique fusion of the <span style="color: #303f9f; font-weight: bold">Nigerian and British curricula</span>.  It provide the students with the skills, knowledge, experience and imaginative understanding for a lifetime of learning and enjoyment, as well as an awareness and respect for moral values and the community.</p>
+<p class="lead" style="text-align: justify; color: #000">The school is divided into the Junior Secondary and Senior Secondary sections. In Junior School the students spend three years and take three end-of-course examinations; <span style="color: #303f9f; font-weight: bold">Basic Certificate of Education (BECE), ERC (FCTERC Exams) and Checkpoint, organized by Cambridge International Examination (CIE)</span>. </p>
+<p class="lead" style="text-align: justify; color: #000">Students spend 3 years in Senior School. At the end of the second year (SS2) students sit for the International General Certificate of Secondary Education (IGCSE) examinations and in their final year (SS3) they take the <span style="color: #303f9f; font-weight: bold"> West African Senior School Certificate Examination (WASSCE)</span> organized by WAEC as well as <span style="color: #303f9f; font-weight: bold">The National Examination Council Examination (NECO).</span></p>
+
+
   </div>
 </div>
   
@@ -539,21 +588,7 @@ section#intro {
 
 
 
-<div class="card">
-                <button  style="background-color: #303f9f" class="btn text-white" type="button" data-toggle="collapse" data-target="#dsens" aria-expanded="false" aria-controls="collapseExample">
-  <div class="card-header text-left"> 
-    DANBO SPECIAL EDUCATION NEEDS SCHOOL (Curriculum)
 
-
-  </div>
-  </button>
-<div class="collapse" id="dsens" data-parent="#accordion">
-  <div class="card-body">
-    ENTER CURRICULUM HERE Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  </div>
-</div>
- 
-</div>
 
 
 
@@ -590,17 +625,30 @@ section#intro {
 <div class="parallax text-center">
   
   
-  <div class="container" style="height: 100%">
-    <div class="row h-100" >
-      <div class="col-sm-12  my-auto ">
-         <button class="btn" style="background-color:#303f9f;color: #fff; font-weight: bold; ">WE ARE COMMITED TOWARDS ENSURING THAT STUDENTS LEARN, A CULTURE OF COLLABORATION AND A FOCUS ON RESULTS</button> 
-        
-      </div>
-      
-    </div>
-    
-  </div>
-  
+  <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tm-overlay tm-bg-white">
+                      <div class="row">    
+                        <div class="col-sm-6">
+                        <h4 class="text-white mb-5">EXTRA CURRICULAR ACTIVITIES</h4>
+                        <p class="mb-5 lead" style="text-align: justify; color: #fff">Our extra-curricular activities are designed to develop the mind and motor skills of our learners; they include; Basketball,Inter-house athletics, Football, Taekwondo, Swimming,Coding Club, indoor and outdoor games,Arts and Crafts, music and dance.School shuttle buses are also available for parents who are interested.</p>
+                       
+                      </div>
+                        <div class="col-sm-6 bus">
+
+                          
+                          
+                          
+                           
+                      </div>
+                       
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 </div>
 
 
@@ -615,7 +663,7 @@ section#intro {
 
 
 
- <div id="accordion">
+ <div id="accordion" class="bg-light">
 
 
 
@@ -632,7 +680,7 @@ section#intro {
           
         </div>
          <div class="col-md-4">
-          <button onclick="prog(event)" class="btn text-align programmes" data-toggle="collapse" data-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree"  style="border-radius: 30%;padding: 10px 100px;width: 100%; font-size: 13px; font-weight: bold;background-color: #303f9f; color: #fff">LIBRARY</button>
+          <button onclick="prog(event)" class="btn text-align programmes" data-toggle="collapse" data-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree"  style="border-radius: 30%;padding: 10px 100px;width: 100%; font-size: 13px; font-weight: bold;background-color: #303f9f; color: #fff">LEARNING ENVIRONMENT</button>
           
         </div>
         
@@ -640,15 +688,94 @@ section#intro {
       
     </div>
 
-    <div class="container" style="margin-top: 20px" id="programmes">
+    <div class="container" style="margin-top: 20px; padding-left: 0px" id="programmes">
       <div class="row" style="width: 100%">
         <div class="collapse" data-parent="#accordion" id="collapseOne"  style="width: 100%">
         <div class="card card-body">
-           <div class="row mb-5">
+          <div class="row mb-5">
           <div class="col-12 text-center">
-            <span class="text-cursive h5 text-red d-block" style="font-size: 25px; font-weight: bold;">OUR LEARNING RESOURCE</span>
+            <span class="text-cursive h5 text-red d-block">Our Learning Resource</span>
           </div>
         </div>
+  <section class="bg-light text-dark animated rotateIn duration-3s">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="images/ict.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h2 class="display-4">Virtual Learning Environment</h2>
+            <p class="lead" style="text-align: justify;"> 
+A virtual learning environment (VLE) is a set of teaching and learning tools designed to enhance a student's learning experience by including computers and the Internet in the learning process. Are Danbo International we have taking a deliberate step towards ensuring learning through the web by using standard virtual learning tools. We maintain a portal that ensure that our students are involve in our learning process irrespective of distance.
+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-dark animated fadeIn duration-3s">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="images/health.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+            <h2 class="display-4">School Management System</h2>
+            <p class="lead" style="text-align: justify;">To enhance the performance of our school with minimal effort, the schools maintain a standard school management system. Our students have a better academic experience, the can access their reports and record 24/7 through our school management system. The processing time for staffs are also reduce. This implies that more time are allocated to the students to increase academic performance.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-light text-dark">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="images/cam.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="p-5">
+            <h2 class="display-4">G-suit for Education</h2>
+            <p class="lead" style="text-align: justify;">G Suite for Education is a suite of free Google apps tailored specifically for schools. Deliver value with built-in, multi-layer security, and 24/7 support. Educators can provide instant feedback and track a student’s progress to improve performance. With powerful tools like Classroom, instructors can manage curriculum, assignments, and grading all in one place. Danbo International Schools has taken a step ahead by taken advantage of G-Suite to promote learning. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+   <section class="text-dark">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="p-5">
+            <img class="img-fluid rounded-circle" src="images/studio.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-5">
+            <h2 class="display-4">E-Library</h2>
+            <p class="lead" style="text-align: justify;">At Danbo International School, we are passionate about ensuring that students are able to use new technologies available to increase learning appetite and performance. We patronize E-library systems to make digital content available for our students. Our library also has computers which are available to our library users. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+
+ 
           
           
         </div> 
@@ -658,8 +785,180 @@ section#intro {
         <div class="collapse show" data-parent="#accordion" id="collapsetwo" style="width: 100%">
          <div class="card card-body">
            <div class="row mb-5">
-          <div class="col-12 text-center">
-            <span class="text-cursive h5 text-red d-block" style="font-size: 25px; font-weight: bold;">OUR PROGRAMMES</span>
+          <div class="col-12 text-left">
+            
+              <section class="bg-light text-dark text-justify " style="margin-top: 0; width: 100%"   >
+              <div class="row">
+
+                                        
+                                            <div class="col-md-12 slideInUp">
+                                            
+                                                    <h4 class="display-4 text-center">NURSERY</h4>
+                                                    <p class="lead" style="text-align: justify;color: #000 ">Our programme for children is divided into 2:
+                                                       Early Years and CRÈCHE. </p><p>
+                                                        <h4 class="text-left">EARLY YEARS:</h4>
+                                                        <p class="lead" style="text-align: justify;color: #000 ">
+                                                        There are 4 age groups in Early Years at Danbo Nursery:
+                                                      </p>
+                                                        <ul class="list-group">
+                                                         <li class="list-group-item"> <span style="color: #303f9f; font-weight: bold">Preparatory class (TODDLERS)1-2years; for children who turned 1 from September onwards.</span></li>
+                                                         <li class="list-group-item">  <span style="color: #303f9f; font-weight: bold">Pre-nursery 2-3 years (ON OR BEFORE SEPTEMBER)</span></li>
+                                                          <li class="list-group-item"> <span style="color: #303f9f; font-weight: bold">Nursery 3-4 years        (ON OR BEFORE SEPTEMBER)</span></li>
+                                                          <li class="list-group-item"> <span style="color: #303f9f; font-weight: bold">Reception 4-5 years     (ON OR BEFORE SEPTEMBER)</span></li>
+ 
+                                                          </ul>
+                                                        
+                                                        <h4 class="text-left">CRÈCHE:</h4>
+                                                         <p class="lead" style="text-align: justify;color: #000 ">
+                                                        
+                                                       Our greatest natural resource is the mind of our children, bringing them to the right environment, to the right people and trusted hands inculcating the right values into their minds at a tender age is our calling. We cater for children between 8 weeks to 12months.</p>
+<h4 class="text-left">AFTER SCHOOL CARE SERVICE:</h4>  <p class="lead" style="text-align: justify;">to ensure your kids are in good hands while you are at work, our after school service is a” home away from home”. Where    the children are well cared for and nurtured. We engage them in lots of extra-curricular and soft skills activities and also feed them in a homely atmosphere.</p>
+<h4 class="text-left">OUR SCHDULE</h4>
+ <ul class="list-group">
+ <li class="list-group-item"> <span style="color: #303f9f; font-weight: bold">Our school day at 7:30am -2:30pm</span></li>
+ <li class="list-group-item"> <span style="color: #303f9f; font-weight: bold">CRECHE: 7:30AM- 5:00pm</span></li>
+ <li class="list-group-item"> <span style="color: #303f9f; font-weight: bold">AFTER SCHOOL CARE:2:30pm -5:00pm</span></li>
+<h4 class="text-left">SCHOOL FOOD:</h4>  <p class="lead" style="text-align: justify;">We provide well balanced meal from a  hygienic kitchen prepared by well trained caterers.</p>
+                                                        </p>
+                                                       
+                                                          
+                                                      
+                                                    
+                                                
+                                            </div>
+                                          
+                                        
+              </div>
+              </section>  
+
+
+
+
+                    <section class="text-dark text-justify pt-4 mt-0" style="margin-top: 0"  >
+              <div class="row ">
+
+                                        
+                                            <div class="col-md-8">
+                                            
+                                                    <h4 class="display-4 text-center">PRIMARY</h4>
+                                                    <p class="lead" style="text-align: justify;color: #000 ">Learning groups are arranged in two key stages:
+                                                       Key stage one comprises learners ages 6 – 7 years (years 1 and 2) while key stage 2 accommodates learners in years 3 – 6 ages 8 – 12 years.
+At the end of key stage one, learners write the End of key stage <span style="color: #303f9f; font-weight: bold">SAT</span> assessments to ascertain their learning exit on expected levels using the British attainment target profile. The learners are exposed to several certification examinations such as the <span style="color: #303f9f; font-weight: bold">CIPC (Cambridge International Primary Checkpoint Exams) — organized by the Cambridge International Examination (CIE) DFL.</span> </p>
+                                                          
+                                                      
+                                                    
+                                                
+                                            </div>
+                                            <div class="col-md-4">
+                                                
+                                                    <img  class="img-fluid" src="images/academics/academicsprimary1.jpg" alt="">
+                                               
+                                            </div>
+                                        
+              </div>
+              </section>
+
+                    <section class="bg-light text-dark text-justify pt-4 mt-0" style="margin-top: 0"  >
+              <div class="row ">
+
+                                        
+                                            <div class="col-md-8">
+                                            
+                                                    <h4 class="display-4 text-center">COLLEGE</h4>
+                                                   <p class="lead" style="text-align: justify;color: #000 ">The school is divided into the Junior Secondary and Senior Secondary sections. In Junior School the students spend three years and take three end-of-course examinations; <span style="color: #303f9f; font-weight: bold">Basic Certificate of Education (BECE), ERC (FCTERC Exams) and Checkpoint, organized by Cambridge International Examination (CIE).</span> </p>
+<p class="lead" style="text-align: justify;color: #000 ">Students spend 3 years in Senior School. At the end of the second year (SS2) students sit for the International General Certificate of Secondary Education (IGCSE) examinations and in their final year (SS3) they take the West African Senior School Certificate Examination (WASSCE) organized by WAEC as well as The National Examination Council Examination (NECO). </p>
+
+
+
+
+
+                                                          
+                                                      
+                                                    
+                                                
+                                            </div>
+                                            <div class="col-md-4">
+                                                
+                                                    <img  class="img-fluid" src="images/academics/academicscollege.jpg" alt="">
+                                            </div>
+                                        
+              </div>
+              </section>
+
+
+               <section class="text-dark text-justify pt-4 mt-0" style="margin-top: 0"  >
+              <div class="row ">
+
+                                        
+                                            <div class="col-md-8">
+                                            
+                                                    <h4 class="display-4 text-center"> SPECIAL EDUCATION NEEDS</h4>
+                                                    <p class="lead" style="text-align: justify;color: #000 ">
+            The educational aims for students with special needs are the same as those for all students. 
+Our practitioners are trained to identify children with special needs and special barriers to learning, we proffer solutions through developing individual education plans to accommodate the children thereby creating equal platforms for learning for all our learners
+ </p>
+
+
+
+
+
+
+                                                          
+                                                      
+                                                    
+                                                
+                                            </div>
+                                            <div class="col-md-4">
+                                                
+                                                   <img  class="img-fluid" src="images/academics/academicssens.jpg" alt="">                                             
+                                            </div>
+                                        
+              </div>
+              </section>
+           
+
+
+ <section class="bg-light text-dark text-justify pt-4 mt-0" style="margin-top: 0"  >
+              <div class="row ">
+
+                                        
+                                            <div class="col-md-8">
+                                            
+                                                    <h4 class="display-4 text-center"> SIXTH-FORM</h4>
+                                                    <p class="lead" style="text-align: justify;color: #000 ">
+           Sixth-Form is a pre- university college where aspiring youths are nurtured with admirable character and blended with outstanding academic achievements. We run the following programmes:</p>
+          <p class="lead" style="text-align: justify;color: #000 ">
+           <ul class="list-group">
+             <li class="list-group-item"> <span style="color: #303f9f; font-weight: bold">Cambridge A-Levels (AS & A2)</span></li>
+             <li class="list-group-item"> <span style="color: #303f9f; font-weight: bold">Interim Joint Matriculation Board (IJMB)</span></li>
+             <li class="list-group-item"> <span style="color: #303f9f; font-weight: bold">Remedial (WAEC) retake and UTME</span></li>
+             <li class="list-group-item"> <span style="color: #303f9f; font-weight: bold">Scholastic Assessment Test (SAT)</span></li>
+             <li class="list-group-item"> <span style="color: #303f9f; font-weight: bold">English proficiency tests such as test of English as a foreign language and international English language testing system (IELTS)</span></li>
+             <li class="list-group-item"> <span style="color: #303f9f; font-weight: bold">Graduate Record Examination (GRE</span></li>
+             <li class="list-group-item"> <span style="color: #303f9f; font-weight: bold">English for special purpose (ESP)</span></li>
+           </ul>
+ </p>
+
+
+
+
+
+
+                                                          
+                                                      
+                                                    
+                                                
+                                            </div>
+                                            <div class="col-md-4">
+                                                
+                                                   <img  class="img-fluid" src="images/academics/academicssixthform.jpg" alt="">
+                                               
+                                            </div>
+                                        
+              </div>
+              </section>
+           
+
           </div>
         </div>
         </div>
@@ -671,7 +970,46 @@ section#intro {
          <div class="card card-body">
            <div class="row mb-5">
           <div class="col-12 text-center">
-            <span class="text-cursive h5 text-red d-block" style="font-size: 25px; font-weight: bold;">OUR LIBRARY</span>
+             <section class="text-dark">
+    <div class="container">
+       <h2 class="display-4" style="text-align: center;">OUR LEARNING ENVIRONMENT</h2>
+      <div class="row align-items-center">
+
+        <div class="col-lg-5">
+          <div class="p-5">
+            <img class="img-fluid" src="images/gallery/nursery_3.jpeg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="p-5">
+            <p class="lead" style="text-align: justify;">  Developing an engaging and positive learning environment for leaners is essential in a learning environment. We maintain a very conducive learning environment at Danbo International schools with many outstanding features.</p>
+
+             <p class="lead" style="text-align: justify;color: #000 ">
+            Our Classrooms are organized with average class size of <span style="color: #303f9f; font-weight: bold">10 students/ class</span>. Our custodians ensure high standards of facility care and cleanliness.
+          </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <div class="p-5">
+            <img class="img-fluid" src="images/ict.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="p-5">
+            
+           <p class="lead" style="text-align: justify;color: #000 ">
+
+            When technology is integrated into lessons, students are expected to be more interested in the subjects they are studying. Technology provides different opportunities to make learning more fun and enjoyable in terms of teaching same things in new ways. At Danbo international schools, Technology characterizes our learning programme with <span style="color: #303f9f; font-weight: bold">24/7 internet facility</span>.At Danbo International School, we enjoy <span style="color: #303f9f; font-weight: bold">24/7 electricity</span> via our standard generators and inverters. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+            
+          
           </div>
         </div>
         </div>
